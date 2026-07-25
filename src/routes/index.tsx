@@ -35,26 +35,21 @@ function Hero() {
         ))}
         <div className="absolute inset-0 bg-gradient-to-r from-primary-deep/85 via-primary/60 to-transparent" />
 
-        {/* Admission ribbon */}
-        <div className="absolute right-6 top-6 rotate-3 rounded-full bg-accent px-5 py-2 text-xs font-bold uppercase tracking-widest text-white shadow-lg md:right-10 md:top-10">
-          ● Admissions Open 2026-27
-        </div>
-
-        <div className="relative mx-auto flex h-full max-w-7xl flex-col justify-center px-6">
+        <div className="relative mx-auto flex h-full max-w-7xl flex-col justify-center px-6 pt-16 md:pt-0">
           <div className="max-w-3xl animate-fade-up">
-            <div className="mb-4 flex items-center gap-3">
-              <span className="h-[2px] w-10 bg-accent" />
-              <span className="text-xs font-semibold uppercase tracking-[0.3em] text-accent">Excellence in Professional Education</span>
+            <div className="mb-3 flex items-center gap-3 md:mb-4">
+              <span className="h-[2px] w-8 bg-accent md:w-10" />
+              <span className="text-[11px] font-semibold uppercase tracking-[0.2em] text-accent md:text-xs md:tracking-[0.3em]">Excellence in Professional Education</span>
             </div>
-            <h1 className="font-display text-4xl font-bold leading-[1.05] text-white md:text-6xl lg:text-7xl">
+            <h1 className="font-display text-3xl font-bold leading-[1.05] text-white sm:text-4xl md:text-6xl lg:text-7xl">
               Ashrith Group<br />of Institutions
             </h1>
-            <p className="mt-6 font-display text-xl italic text-white/90 md:text-2xl">
+            <p className="mt-4 font-display text-lg italic text-white/90 md:mt-6 md:text-2xl">
               "Study to Serve the Humanity"
             </p>
-            <div className="mt-8 flex flex-wrap gap-3">
+            <div className="mt-6 flex flex-wrap gap-3 md:mt-8">
               <Link to="/application" className="btn-primary">Enquire Now <ArrowRight className="h-4 w-4" /></Link>
-              <Link to="/institutes" className="inline-flex items-center gap-2 rounded-full border-1.5 border-white/60 px-6 py-3 font-display text-sm font-semibold text-white transition hover:bg-white hover:text-primary">
+              <Link to="/institutes" className="inline-flex items-center gap-2 rounded-full border border-white/60 px-5 py-2.5 font-display text-sm font-semibold text-white transition hover:bg-white hover:text-primary md:border-[1.5px] md:px-6 md:py-3">
                 Explore Institutes
               </Link>
             </div>
@@ -72,7 +67,7 @@ function Hero() {
       </div>
 
       {/* Quick actions bar */}
-      <div className="relative z-10 mx-auto -mt-10 max-w-5xl px-6">
+      <div className="relative z-10 mx-auto mt-0 max-w-5xl px-4 md:-mt-10 md:px-6">
         <div className="grid grid-cols-1 divide-y overflow-hidden rounded-2xl bg-white shadow-xl md:grid-cols-3 md:divide-x md:divide-y-0">
           {[
             { to: "/institutes", label: "Explore Institutes", sub: "3 divisions of study" },
