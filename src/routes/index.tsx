@@ -66,24 +66,7 @@ function Hero() {
         </div>
       </div>
 
-      {/* Quick actions bar */}
-      <div className="relative z-10 mx-auto mt-0 max-w-5xl px-4 md:-mt-10 md:px-6">
-        <div className="grid grid-cols-1 divide-y overflow-hidden rounded-2xl bg-white shadow-xl md:grid-cols-3 md:divide-x md:divide-y-0">
-          {[
-            { to: "/institutes", label: "Explore Institutes", sub: "3 divisions of study" },
-            { to: "/application", label: "Admission Enquiry", sub: "Apply for 2026-27" },
-            { to: "/contact", label: "Contact Us", sub: "Talk to our team" },
-          ].map((a) => (
-            <Link key={a.to} to={a.to as never} className="group flex items-center justify-between p-6 transition hover:bg-cream">
-              <div>
-                <div className="font-display font-bold text-primary">{a.label}</div>
-                <div className="text-xs text-muted-foreground">{a.sub}</div>
-              </div>
-              <ArrowRight className="h-5 w-5 text-accent transition group-hover:translate-x-1" />
-            </Link>
-          ))}
-        </div>
-      </div>
+
     </section>
   );
 }
