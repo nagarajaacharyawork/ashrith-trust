@@ -33,12 +33,6 @@ export const Route = createFileRoute("/institutes/paramedical")({
         "Digital library with paramedical resources",
         "Placement support for hospital and diagnostic careers",
       ]}
-      faculty={[
-        { name: "Documents Required", role: "SSLC Certificate · PUC Marks Card · Passport Photos" },
-        { name: "Transfer Certificate", role: "Migration Certificate · Conduct Certificate" },
-        { name: "Physical Fitness Certificate", role: "Registration Fee Receipt" },
-        { name: "Employment", role: "Hospitals · Govt. Hospitals · Medical Labs · Medical Colleges · Research Organizations" },
-      ]}
     />
   ),
 });

@@ -34,12 +34,6 @@ export const Route = createFileRoute("/institutes/nursing")({
         "Scholarships, internal assessment and career guidance",
         "Annual examinations, clinical evaluation and academic progress monitoring",
       ]}
-      faculty={[
-        { name: "Documents Required", role: "SSLC Marks Card · PUC Marks Card · Transfer Certificate" },
-        { name: "Conduct Certificate", role: "Migration Certificate (if applicable) · Passport Photos" },
-        { name: "Physical Fitness Certificate", role: "Original Certificates mandatory at admission" },
-        { name: "Employment", role: "Hospitals · Government Hospitals · Community Health · Research" },
-      ]}
     />
   ),
 });

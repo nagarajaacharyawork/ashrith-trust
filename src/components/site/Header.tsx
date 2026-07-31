@@ -16,7 +16,6 @@ const nav: NavItem[] = [
 const institutes = [
   { to: "/institutes/nursing", label: "Ashrith College & School of Nursing" },
   { to: "/institutes/paramedical", label: "K. R. Hegde College of Paramedical Sciences" },
-  { to: "/institutes/pu", label: "Ashrith Pre-University College" },
 ];
 
 export function Header() {

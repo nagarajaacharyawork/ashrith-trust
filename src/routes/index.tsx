@@ -6,7 +6,6 @@ import { Ticker } from "@/components/site/Ticker";
 import heroCampus from "@/assets/College_Image.JPG";
 import nursingImg from "@/assets/nursing-college.jpg";
 import paramedImg from "@/assets/paramedical-college.jpg";
-import puImg from "@/assets/pu-college.jpg";
 import aerial from "@/assets/main-entrence.JPG";
 import g1 from "@/assets/studentsatclass.JPG";
 import g2 from "@/assets/Class.JPG";
@@ -74,7 +73,6 @@ function Hero() {
 const instituteCards = [
   { to: "/institutes/nursing", title: "Ashrith College & School of Nursing", desc: "Offers B.Sc Nursing and School of Nursing programs with modern infrastructure, experienced faculty, clinical exposure, laboratories, and practical learning.", img: nursingImg },
   { to: "/institutes/paramedical", title: "K. R. Hegde College of Paramedical Sciences", desc: "Offers Diploma programs including DMLT, DOT & AT, Dialysis Technology, and Ophthalmic Technology with practical hospital training.", img: paramedImg },
-  { to: "/institutes/pu", title: "Ashrith Pre-University College", desc: "Science stream with PCMB and PCMC combinations preparing students for higher education and professional careers.", img: puImg },
 ];
 
 function Institutes() {
@@ -87,11 +85,11 @@ function Institutes() {
             <h2 className="section-heading">Our Institutes</h2>
           </div>
           <p className="max-w-md text-muted-foreground">
-            Three focused institutions united under one trust — advancing healthcare
+            Two focused institutions united under one trust — advancing healthcare
             education from foundation to profession.
           </p>
         </div>
-        <div className="grid gap-6 md:grid-cols-3">
+        <div className="grid gap-6 md:grid-cols-2 max-w-3xl mx-auto">
           {instituteCards.map((c) => (
             <Link key={c.to} to={c.to as never} className="group relative block h-[420px] overflow-hidden rounded-2xl shadow-card">
               <img src={c.img} alt={c.title} className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-110" loading="lazy" />

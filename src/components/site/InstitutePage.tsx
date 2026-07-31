@@ -4,7 +4,7 @@ import { ArrowRight, CheckCircle2 } from "lucide-react";
 import { PageHero } from "@/components/site/SiteLayout";
 
 export function InstitutePage({
-  eyebrow, name, tagline, image, overview, courses, facilities, faculty,
+  eyebrow, name, tagline, image, overview, courses, facilities,
 }: {
   eyebrow: string;
   name: string;
@@ -13,7 +13,6 @@ export function InstitutePage({
   overview: ReactNode;
   courses: { title: string; duration: string; desc: string }[];
   facilities: string[];
-  faculty: { name: string; role: string }[];
 }) {
   return (
     <>
@@ -45,32 +44,17 @@ export function InstitutePage({
       </section>
 
       <section className="bg-white py-20">
-        <div className="mx-auto grid max-w-7xl gap-12 px-6 md:grid-cols-2">
-          <div>
-            <div className="eyebrow mb-3">Infrastructure</div>
-            <h2 className="section-heading mb-6">Facilities</h2>
-            <ul className="space-y-3">
-              {facilities.map((f) => (
-                <li key={f} className="flex items-start gap-3">
-                  <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-heal" />
-                  <span className="text-foreground/85">{f}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
-          <div>
-            <div className="eyebrow mb-3">Our Team</div>
-            <h2 className="section-heading mb-6">Faculty Highlights</h2>
-            <div className="grid gap-4 sm:grid-cols-2">
-              {faculty.map((f) => (
-                <div key={f.name} className="rounded-xl bg-cream p-4">
-                  <div className="mb-3 h-16 w-16 rounded-full bg-gradient-to-br from-primary/20 to-accent/20" />
-                  <div className="font-display font-bold text-primary">{f.name}</div>
-                  <div className="text-xs uppercase tracking-widest text-accent">{f.role}</div>
-                </div>
-              ))}
-            </div>
-          </div>
+        <div className="mx-auto max-w-7xl px-6">
+          <div className="eyebrow mb-3">Infrastructure</div>
+          <h2 className="section-heading mb-6">Facilities</h2>
+          <ul className="grid gap-3 md:grid-cols-2">
+            {facilities.map((f) => (
+              <li key={f} className="flex items-start gap-3">
+                <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-heal" />
+                <span className="text-foreground/85">{f}</span>
+              </li>
+            ))}
+          </ul>
         </div>
       </section>
 

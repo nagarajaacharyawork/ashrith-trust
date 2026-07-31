@@ -4,25 +4,22 @@ import { PageHero } from "@/components/site/SiteLayout";
 import aerial from "@/assets/main-entrence.JPG";
 import nursingImg from "@/assets/nursing-college.jpg";
 import paramedImg from "@/assets/paramedical-college.jpg";
-import puImg from "@/assets/pu-college.jpg";
 
 export const Route = createFileRoute("/institutes/")({
   component: InstitutesIndex,
 });
 
 const cards = [
-  { to: "/institutes/nursing", title: "Ashrith College & School of Nursing", desc: "GNM · B.Sc Nursing", img: nursingImg,
-    long: "Comprehensive nursing programmes with modern skill labs, clinical partnerships and a strong emphasis on ethical, compassionate practice." },
-  { to: "/institutes/paramedical", title: "K. R. Hegde College of Paramedical Sciences", desc: "DMLT · DOT & AT · Allied Health", img: paramedImg,
-    long: "Industry-aligned diploma programmes in medical laboratory technology, operation theatre and anaesthesia technology, and other allied specialties." },
-  { to: "/institutes/pu", title: "Ashrith Pre-University College", desc: "PCMB · PCMC", img: puImg,
-    long: "Pre-university science education (Class 11–12) with rigorous academics that prepare students for healthcare and STEM careers." },
+  { to: "/institutes/nursing", title: "Ashrith College & School of Nursing", desc: "B.Sc Nursing · School of Nursing", img: nursingImg,
+    long: "Offers B.Sc Nursing and School of Nursing programs with modern infrastructure, experienced faculty, clinical exposure, well-equipped laboratories, and practical learning." },
+  { to: "/institutes/paramedical", title: "K. R. Hegde College of Paramedical Sciences", desc: "DMLT · DOT & AT · Dialysis · Ophthalmic", img: paramedImg,
+    long: "Offers Diploma programs including DMLT, DOT & AT, Dialysis Technology, and Ophthalmic Technology with practical hospital training and industry-aligned curriculum." },
 ];
 
 function InstitutesIndex() {
   return (
     <>
-      <PageHero eyebrow="What We Offer" title="Our Institutes" subtitle="Three institutions. One vision. A shared commitment to serving humanity through education." image={aerial} />
+      <PageHero eyebrow="What We Offer" title="Our Institutes" subtitle="Two institutions. One vision. A shared commitment to serving humanity through education." image={aerial} />
       <section className="bg-white py-20">
         <div className="mx-auto max-w-7xl space-y-16 px-6">
           {cards.map((c, i) => (
