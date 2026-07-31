@@ -72,9 +72,9 @@ function Hero() {
 }
 
 const instituteCards = [
-  { to: "/institutes/nursing", title: "Ashrith College & School of Nursing", desc: "GNM · B.Sc Nursing programmes with modern skill labs.", img: nursingImg },
-  { to: "/institutes/paramedical", title: "K. R. Hegde College of Paramedical Sciences", desc: "DMLT, DOT & AT and allied health diplomas.", img: paramedImg },
-  { to: "/institutes/pu", title: "Ashrith Pre-University College", desc: "PU Science with PCMB / PCMC combinations.", img: puImg },
+  { to: "/institutes/nursing", title: "Ashrith College & School of Nursing", desc: "Offers B.Sc Nursing and School of Nursing programs with modern infrastructure, experienced faculty, clinical exposure, laboratories, and practical learning.", img: nursingImg },
+  { to: "/institutes/paramedical", title: "K. R. Hegde College of Paramedical Sciences", desc: "Offers Diploma programs including DMLT, DOT & AT, Dialysis Technology, and Ophthalmic Technology with practical hospital training.", img: paramedImg },
+  { to: "/institutes/pu", title: "Ashrith Pre-University College", desc: "Science stream with PCMB and PCMC combinations preparing students for higher education and professional careers.", img: puImg },
 ];
 
 function Institutes() {
@@ -127,20 +127,18 @@ function About() {
           <h2 className="section-heading mb-6">Ashrith Trust <span className="text-accent">®</span></h2>
           <p className="text-base leading-relaxed text-foreground/80">
             Ashrith Trust (R) endeavours to meet the challenges of today and tomorrow by focusing
-            on the development of the individual — intellectually, emotionally, physically,
+            on the development of an individual intellectually, emotionally, physically,
             socially, and spiritually. Founded by <strong className="text-primary">K. R. Hegde</strong>
             {" "}(Chairman & Managing Trustee) and <strong className="text-primary">Dr. Vidyadhar Shetty K.</strong>
-            {" "}(Director & Trustee) — both with extensive experience in healthcare, education and social service —
-            the Trust is dedicated to serving people through quality education in the health sciences.
+            {" "}(Director & Trustee), the Trust is committed to excellence in healthcare, education, and social service.
           </p>
           <p className="mt-4 text-base leading-relaxed text-foreground/80">
             Ashrith College of Nursing, Ashrith School of Nursing, and K. R. Hegde College of
-            Paramedical Sciences are all established and managed under Ashrith Trust (R), with a
-            shared commitment to continuously innovate teaching and learning through active
-            engagement with experts in their respective fields.
+            Paramedical Sciences are established and managed by Ashrith Trust (R). The institutions
+            continuously innovate teaching and learning through active involvement of experienced professionals.
           </p>
           <div className="mt-8 flex flex-wrap gap-6">
-            {[["1000+", "Alumni"], ["50+", "Faculty"], ["3", "Institutes"]].map(([n, l]) => (
+            {[["15+", "Years of Service"], ["1000+", "Alumni"], ["50+", "Faculty"], ["3", "Institutions"]].map(([n, l]) => (
               <div key={l as string}>
                 <div className="font-display text-3xl font-bold text-primary">{n}</div>
                 <div className="text-xs uppercase tracking-widest text-muted-foreground">{l}</div>
@@ -157,7 +155,7 @@ const mvpItems = [
   { icon: Target, title: "Our Mission", text: "Teach students to practice ethical values in their personal and professional life, rendering nursing service in a committed manner with the spirit of humanity." },
   { icon: Heart, title: "Philosophy", text: "We believe in excellence in the generation and transmission of nursing knowledge through a teaching-learning process that is the responsibility of both faculty and students." },
   { icon: Eye, title: "Our Vision", text: "Our holistic approach to learning promotes the development of every student's mind, body, and soul in an academically stimulating environment." },
-  { icon: GraduationCap, title: "Aims & Objectives", text: "To acquire knowledge of the theory and principles of nursing and allied subjects involved in the delivery of comprehensive nursing practice." },
+  { icon: GraduationCap, title: "Aims & Objectives", text: "To acquire knowledge of theory and principles of nursing and allied subjects involved in delivering comprehensive nursing practice." },
 ];
 
 function MVP() {
@@ -241,16 +239,15 @@ function Campus() {
           <div className="eyebrow mb-3">Our Home</div>
           <h2 className="section-heading mb-6">Our Campus @ Kota</h2>
           <p className="leading-relaxed text-foreground/80">
-            The campus is located at Kota on NH-66, Udupi Taluk & District, Karnataka — a picturesque
-            pilgrim and tourism centre in coastal Karnataka, sheltered by the Western Ghats to the
-            east and bordered by the Arabian Sea. It is 20 km from Udupi Railway Station and 10 km
-            from Barkur & Kundapur Railway Stations. The international university town of Manipal
-            is just 10 km away.
+            The campus is situated at Kota on NH-66 in Udupi Taluk, Karnataka. Kota is a picturesque
+            pilgrim and tourism centre sheltered by the Western Ghats on the east and bordered by
+            the Arabian Sea on the west.
           </p>
           <p className="mt-4 leading-relaxed text-foreground/80">
-            Kota's cosmopolitan culture, progressive population, and thriving educational
-            institutions in health, science and technology make it the ideal choice for a
-            dream education.
+            The campus is approximately 20 km from Udupi Railway Station, 10 km from Barkur Railway
+            Station, 10 km from Kundapura Railway Station, and 12 km from Manipal. Kota has a
+            progressive population and thriving educational institutions in health, science, and
+            technology, making it an ideal destination for quality education.
           </p>
           <div className="mt-6 flex items-center gap-2 text-sm text-primary">
             <MapPin className="h-4 w-4 text-accent" /> NH-66, Kota, Udupi Taluk & District, 576221
@@ -270,7 +267,7 @@ function GalleryStrip() {
         <div className="mb-8 flex items-end justify-between">
           <div>
             <div className="eyebrow mb-3">Campus Life</div>
-            <h2 className="section-heading">In Pictures</h2>
+            <h2 className="section-heading">Campus Life in Pictures</h2>
           </div>
           <Link to="/gallery" className="text-sm font-semibold text-accent hover:underline">View all →</Link>
         </div>

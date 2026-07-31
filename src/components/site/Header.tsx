@@ -35,8 +35,9 @@ export function Header() {
       <div className="hidden bg-primary-deep text-white/90 text-xs md:block">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-2">
           <div className="flex items-center gap-6">
-            <span className="flex items-center gap-1.5"><MapPin className="h-3.5 w-3.5" /> NH-66, Kota, Udupi – 576221, Karnataka</span>
-            <a href="tel:+918202586777" className="flex items-center gap-1.5 hover:text-accent"><Phone className="h-3.5 w-3.5" /> +91 820 2586777</a>
+            <span className="flex items-center gap-1.5"><MapPin className="h-3.5 w-3.5" /> NH-66, Kota, Udupi Taluk & District – 576221, Karnataka</span>
+            <a href="tel:+919148087860" className="flex items-center gap-1.5 hover:text-accent"><Phone className="h-3.5 w-3.5" /> +91 91480 87860</a>
+            <a href="tel:+919148087861" className="flex items-center gap-1.5 hover:text-accent"><Phone className="h-3.5 w-3.5" /> +91 91480 87861</a>
             <a href="mailto:info@ashritheducationtrust.org" className="flex items-center gap-1.5 hover:text-accent"><Mail className="h-3.5 w-3.5" /> info@ashritheducationtrust.org</a>
           </div>
           <span className="uppercase tracking-widest text-[10px] text-accent">Excellence in Professional Education · Since 2009</span>

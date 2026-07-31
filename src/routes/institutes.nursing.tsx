@@ -11,33 +11,34 @@ export const Route = createFileRoute("/institutes/nursing")({
       image={img}
       overview={
         <>
-          <p>Established under Ashrith Trust (R), Ashrith College and School of Nursing offers
-            recognised programmes affiliated to relevant nursing councils and universities. The
-            institution emphasises evidence-based practice, ethical care and hands-on clinical
-            exposure across partner hospitals in the Udupi–Manipal region.</p>
-          <p>Our curriculum integrates classroom learning with simulation-based skill training,
-            community outreach and clinical postings — preparing graduates who are ready to serve
-            in hospitals, community health settings and beyond.</p>
+          <p>The B.Sc Nursing program is affiliated with Rajiv Gandhi University of Health Sciences
+            (RGUHS), Bengaluru and recognized by the Karnataka Nursing Council (KNC). Ashrith College
+            and School of Nursing offers modern infrastructure, experienced faculty, clinical exposure,
+            well-equipped laboratories, and practical learning.</p>
+          <p>Admission is based on eligibility. Candidates must have completed 17 years of age with
+            PUC / 10+2 in Physics, Chemistry, Biology and English with a minimum aggregate of 45%,
+            good health and character, as per RGUHS regulations.</p>
         </>
       }
       courses={[
-        { title: "B.Sc Nursing", duration: "4 Years", desc: "Undergraduate degree preparing registered nurses for hospital and community practice." },
-        { title: "General Nursing & Midwifery (GNM)", duration: "3 Years", desc: "Diploma programme with strong clinical foundation in general and midwifery nursing." },
-        { title: "Post Basic B.Sc Nursing", duration: "2 Years", desc: "Bridge programme for registered nurses seeking a graduate qualification." },
+        { title: "B.Sc Nursing", duration: "4 Years", desc: "Undergraduate degree affiliated to RGUHS, Bengaluru and recognized by Karnataka Nursing Council (KNC)." },
+        { title: "Ashrith School of Nursing", duration: "3 Years", desc: "School of Nursing programme with strong clinical foundation in general and midwifery nursing." },
       ]}
       facilities={[
-        "Fully equipped nursing foundation and skill labs",
-        "Anatomy, physiology and microbiology laboratories",
-        "Modern library with nursing journals and e-resources",
-        "Separate hostels for boys and girls with 24×7 warden supervision",
-        "Clinical postings across partner hospitals",
-        "Simulation-based OSCE and OSPE training",
+        "Fundamental Lab",
+        "Nutrition Lab",
+        "Community Lab",
+        "Modern library with nursing journals, e-journals and reference materials",
+        "Separate hostels for boys and girls with warden supervision",
+        "Clinical postings at Vinaya Hospital, Kundapur and affiliated hospitals",
+        "Scholarships, internal assessment and career guidance",
+        "Annual examinations, clinical evaluation and academic progress monitoring",
       ]}
       faculty={[
-        { name: "Prof. Sunitha K.", role: "Principal" },
-        { name: "Mrs. Preethi Rao", role: "Vice Principal" },
-        { name: "Ms. Anitha Shetty", role: "Sr. Lecturer" },
-        { name: "Mr. Rajesh Kumar", role: "Clinical Instructor" },
+        { name: "Documents Required", role: "SSLC Marks Card · PUC Marks Card · Transfer Certificate" },
+        { name: "Conduct Certificate", role: "Migration Certificate (if applicable) · Passport Photos" },
+        { name: "Physical Fitness Certificate", role: "Original Certificates mandatory at admission" },
+        { name: "Employment", role: "Hospitals · Government Hospitals · Community Health · Research" },
       ]}
     />
   ),

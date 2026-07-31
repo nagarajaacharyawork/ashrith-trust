@@ -20,8 +20,8 @@ export function Footer() {
             </div>
           </div>
           <p className="mt-4 text-sm leading-relaxed">
-            A registered trust dedicated to excellence in nursing and paramedical education —
-            shaping compassionate healthcare professionals for tomorrow.
+            Ashrith Trust (R) is a registered trust dedicated to excellence in nursing, paramedical
+            education, and holistic student development.
           </p>
           <Link to="/" className="mt-4 inline-block text-sm font-semibold text-accent hover:underline">Read more →</Link>
         </div>
@@ -39,7 +39,7 @@ export function Footer() {
           <h4 className="mb-4 font-display text-sm font-bold uppercase tracking-widest text-white">Contact</h4>
           <ul className="space-y-3 text-sm">
             <li className="flex gap-2"><MapPin className="mt-0.5 h-4 w-4 shrink-0 text-accent" /> NH-66, Kota, Udupi Taluk & District, 576221, Karnataka, India</li>
-            <li className="flex gap-2"><Phone className="mt-0.5 h-4 w-4 shrink-0 text-accent" /> <span>+91 820 2586777<br />+91 94800 87860<br />Director: +91 98800 58567</span></li>
+            <li className="flex gap-2"><Phone className="mt-0.5 h-4 w-4 shrink-0 text-accent" /> <span>+91 820 2586777<br />+91 98800 58567<br />+91 91480 87860<br />+91 91480 87861</span></li>
             <li className="flex gap-2"><Mail className="mt-0.5 h-4 w-4 shrink-0 text-accent" /> info@ashritheducationtrust.org</li>
           </ul>
         </div>
@@ -65,7 +65,6 @@ export function Footer() {
 
       <div className="border-t border-white/10 bg-primary-deep">
         <div className="mx-auto max-w-7xl px-6 py-5 text-center text-xs text-white/70 md:flex md:items-center md:justify-between md:text-left">
-          <span>ASHRITH TRUST (R) — Registered under Karnataka State Societies Act. NH-66, Kota, Udupi – 576221.</span>
           <span>© {year} Ashrith Trust (R). All Rights Reserved.</span>
         </div>
       </div>
